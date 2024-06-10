@@ -1,0 +1,10 @@
+services:
+  app:
+    container_name: hello-ts
+    image: node:20.14.0-slim
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    ports:
+      - 15000:5000
+    stdin_open: true
